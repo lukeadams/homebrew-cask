@@ -1,11 +1,11 @@
 cask :v1 => 'crashplan' do
-  version '4.3.0'
-  sha256 '22d2d26e6f9f356f40029947ace2031a4e34fa9fd54b275de10c6961b8574713'
+  version '4.4.1'
+  sha256 'eba9dbf8511f1195b2837701cdb094d7ac3b03bd36c2a3252392be63ae08cb21'
 
   url "http://download.crashplan.com/installs/mac/install/CrashPlan/CrashPlan_#{version}_Mac.dmg"
   name 'CrashPlan'
   homepage 'https://www.code42.com/crashplan/'
-  license :unknown    # todo: change license and remove this comment; ':unknown' is a machine-generated placeholder
+  license :gratis
 
   pkg 'Install CrashPlan.pkg'
 

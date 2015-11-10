@@ -1,8 +1,8 @@
 cask :v1 => 'texpad' do
 
   if MacOS.release >= :mavericks
-    version '1.7.15'
-    sha256 '9a1e68830a1ef55f45c4b4464d927786e6be6f3d5785299f6d7ed90ffd69f404'
+    version '1.7.18'
+    sha256 '7bd9d72b548b8d580d69254005e759aa6fb2d81bb1e44a4fa801a6b859614bf7'
     url "https://download.texpadapp.com/apps/osx/updates/Texpad_#{version.gsub('.','_')}.zip"
   elsif MacOS.release <= :mountain_lion && MacOS.release >= :snow_leopard
     version '1.6.14'
@@ -16,7 +16,7 @@ cask :v1 => 'texpad' do
   depends_on :macos => '>= :snow_leopard'
 
   appcast 'https://www.texpadapp.com/static-collected/upgrades/texpadappcast.xml',
-          :sha256 => 'bc4c683c395fa35a46b17b1823f3c52480f445ddff2aa7f7fd1361da304dc72a'
+          :sha256 => 'e78733fb9529330962a6392283b7fdfc533adcf730cf66fbadb6d0445f2816a4'
 
   name 'Texpad'
   homepage 'https://www.texpadapp.com/osx'

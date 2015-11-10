@@ -23,12 +23,18 @@ cask :v1 => 'cocktail' do
 
     url "http://www.maintain.se/downloads/sparkle/mavericks/Cocktail_#{version}.zip"
     appcast 'http://www.maintain.se/downloads/sparkle/mavericks/mavericks.xml'
-  else
-    version '8.5.2'
-    sha256 '1ff288ccfb927a82e732a54460c0166bc26fd426a57f5a25717dbe092a79e053'
+  elsif MacOS.release == :yosemite
+    version '8.6'
+    sha256 '847f199c18d0dccec6590b4e1820a358672ba789b7e8586c20376656db84b8d7'
 
     url "http://www.maintain.se/downloads/sparkle/yosemite/Cocktail_#{version}.zip"
     appcast 'http://www.maintain.se/downloads/sparkle/yosemite/yosemite.xml'
+  else
+    version '9.1'
+    sha256 '4db7952900fce3a2c556ec5151b76db336a456bd37c30ff88a0bbfd9708ed3e0'
+
+    url "http://www.maintain.se/downloads/sparkle/elcapitan/Cocktail_#{version}.zip"
+    appcast 'http://www.maintain.se/downloads/sparkle/elcapitan/elcapitan.xml'
   end
 
   name 'Cocktail'

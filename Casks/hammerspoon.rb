@@ -1,6 +1,6 @@
 cask :v1 => 'hammerspoon' do
-  version '0.9.40'
-  sha256 'cf17ceae3529057ddd76b00cbc285b6710c42265af2e53d4aa0bdce3154fb70d'
+  version '0.9.42'
+  sha256 '6b96a76c4c1927ef27bab9cf76c27de7da1f0a4b3c269eab79cebd82e06970bd'
 
   # github.com is the official download host per the vendor homepage
   url "https://github.com/Hammerspoon/hammerspoon/releases/download/#{version}/Hammerspoon-#{version}.zip"

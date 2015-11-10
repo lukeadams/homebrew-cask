@@ -9,9 +9,12 @@ cask :v1 => 'monolingual' do
   elsif MacOS.release <= :mavericks
     version '1.5.10'
     sha256 '2dd4d1164ced9c6ff431eb99db12e46faa10747c7753ed3889d6df493ee096a5'
+  elsif MacOS.release <= :yosemite
+    version '1.6.7'
+    sha256 'c96175ef35aae6409f760e6c1f70e7cc47d45ab2b769c3238b4a4d979d13756b'
   else
-    version '1.7.1'
-    sha256 '53da7e43e52a2399ecca016e0636a434d619077fb1b01f79954f9de574a41784'
+    version '1.7.2'
+    sha256 '29350c6926ff25d22074e62cf1db3a4dcb3940150fead7733276cbf6d4d67d91'
   end
 
   url "https://github.com/IngmarStein/Monolingual/releases/download/v#{version}/Monolingual-#{version}.dmg"

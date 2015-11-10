@@ -1,8 +1,8 @@
 cask :v1 => 'unity' do
-  version '5.1.1f1'
-  sha256 'd34a9c7c267307e8eaee3d124e1fe7d7b8f307760189fe46810e325e3a0312fc'
+  version '5.2.2f1'
+  sha256 '1a810817712f4adea34894b3473b52a6bf2a0c79045edc8eb4ee8df3dd2f07fe'
 
-  url 'http://netstorage.unity3d.com/unity/2046fc06d4d8/UnityDownloadAssistant-5.1.1f1.dmg'
+  url 'http://netstorage.unity3d.com/unity/3757309da7e7/UnityDownloadAssistant-5.2.2f1.dmg'
   name 'Unity'
   homepage 'https://unity3d.com/unity/'
   license :commercial
