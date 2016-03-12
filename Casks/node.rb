@@ -1,13 +1,13 @@
-cask :v1 => 'node' do
-  version '4.2.1'
-  sha256 '688df0a12461f378b296f69e8ae2c1cbb974b0216278624815bce7dcfea080c2'
+cask 'node' do
+  version '4.4.0'
+  sha256 '13eb21a569218815b37893af9f6080eaa8156d0e66c38ed15e5bed4abac739e4'
 
   url "https://nodejs.org/dist/v#{version}/node-v#{version}.pkg"
   name 'Node.js'
   homepage 'https://nodejs.org/'
   license :mit
 
-  pkg  "node-v#{version}.pkg"
+  pkg "node-v#{version}.pkg"
 
-  uninstall :pkgutil => 'org.nodejs.node.pkg'
+  uninstall pkgutil: 'org.nodejs.node.pkg'
 end

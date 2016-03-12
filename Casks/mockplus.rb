@@ -1,6 +1,6 @@
-cask :v1 => 'mockplus' do
-  version '2.0.9.7'
-  sha256 'c7e2824f4941f2c42ed7bc0e8ebc6f3736d497c6f9eba2637f95f8cfae80f63d'
+cask 'mockplus' do
+  version '2.1.4.1'
+  sha256 '67302e2f010217c3bd434f74bdc8680d6ca602d7d5da0035367f330b463fa3ba'
 
   url "http://cdn.mockplus.cn/software/osx/Mockplus_v#{version}.dmg"
   name 'Mockplus'

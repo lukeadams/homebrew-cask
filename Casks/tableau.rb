@@ -1,11 +1,11 @@
-cask :v1 => 'tableau' do
-  version :latest
-  sha256 :no_check
+cask 'tableau' do
+  version '9.2.6'
+  sha256 '0b633f6af181901968666d9f4f46016099cb1302f2e11db78c301c7d1b893cf7'
 
-  url 'https://downloads.tableausoftware.com/tssoftware/TableauDesktop.dmg'
+  url "https://downloads.tableau.com/tssoftware/TableauDesktop-#{version.dots_to_hyphens}.dmg"
   name 'Tableau'
-  homepage 'https://www.tableausoftware.com/'
-  license :unknown    # todo: change license and remove this comment; ':unknown' is a machine-generated placeholder
+  homepage 'https://www.tableau.com/'
+  license :commercial
 
   app 'Tableau.app'
 end
